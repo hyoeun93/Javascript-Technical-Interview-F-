@@ -29,3 +29,14 @@ let addBinaryManual = function(A, B) {
     }
     return sum;
 }
+
+/*
+XOR (^) - same: 0, diff: 1;
+a b c = s c
+0 0 0 = 0 0
+0 0 1 = 1 0 <- a === b !== c, flip carry
+1 0 0 = 1 0
+1 0 1 = 0 1
+1 1 0 = 0 1 <- a === b !== c, flip carry
+1 1 1 = 1 1
+*/
