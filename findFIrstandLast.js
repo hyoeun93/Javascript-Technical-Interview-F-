@@ -11,7 +11,7 @@ var searchRange = function(nums, target) {
         } else if(nums[mid] > target) {
             j = mid - 1;
         } else {
-            let left = med, right = mid 
+            let left = mid, right = mid 
             while(nums[left] === target && left >= 0) {
                 left -= 1
             }
