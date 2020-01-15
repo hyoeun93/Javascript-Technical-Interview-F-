@@ -8,12 +8,21 @@ var nextPermutation = function(nums) {
                 if(nums[j] > nums[i]) {
                     //swap nums[i] and nums[j], reverse from i+1
                     swap(nums, i, j);
+                    reverse(nums, i + 1, nums.length - 1);
                     return;
                 }
             }
         }
     }
+    nums.reverse();
 }
 
 const swap = (nums, i, j) => ([nums[i], nums[j]] = [nums[j], nums[i]]);
 
+const reverse = (nums, start, end) => {
+    while(start < end) {
+        swap(nums, start. end);
+        start++;
+        end--;
+    }
+}
