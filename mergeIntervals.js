@@ -1,4 +1,7 @@
 //Given a collection of intervals, merge all overlapping intervals. 
+//Input: [[1,3],[2,6],[8,10],[15,18]]
+//Output: [[1,6],[8,10],[15,18]]
+
  var merge = function(intervals) {
      for(let i = 0; i < intervals.length; i++) {
          if(intervals[i][1] > intervals[i+1][0]) {
